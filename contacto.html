@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Somos Hispanidad</title>
+  <meta name="description" content="Contacta con Somos Hispanidad. Escríbenos para unirte a la comunidad, proponer colaboraciones o resolver cualquier duda sobre nuestros eventos y actividades.">
+  <link rel="canonical" href="https://maristasdel76.com/contacto.html">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://maristasdel76.com/contacto.html">
+  <meta property="og:title"       content="Contacto — Somos Hispanidad">
+  <meta property="og:description" content="Únete a la comunidad Somos Hispanidad. Escríbenos para conocer nuestras actividades culturales e históricas.">
+  <meta property="og:image"       content="https://maristasdel76.com/images/hero_visual.png">
+
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVEGACIÓN ===== -->
+  <nav id="main-nav" role="navigation" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" id="nav-brand-ct">
+        <img src="images/logo.png" alt="Somos Hispanidad" class="nav-logo">
+        <span class="nav-name">Somos Hispanidad</span>
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html"         id="nav-inicio">Inicio</a></li>
+        <li><a href="quienes-somos.html" id="nav-quienes">Quiénes Somos</a></li>
+        <li><a href="eventos.html"       id="nav-eventos">Eventos</a></li>
+        <li><a href="articulos.html"     id="nav-articulos">Artículos</a></li>
+        <li><a href="contacto.html"      id="nav-contacto" class="active">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <header class="page-hero" id="page-hero-ct">
+    <div class="hero-breadcrumb">
+      <a href="index.html">Inicio</a>
+      <span>›</span>
+      <span>Contacto</span>
+    </div>
+    <h1>Contacto</h1>
+    <p class="page-hero-sub">Escríbenos para unirte a la comunidad, proponer colaboraciones o consultar sobre nuestros próximos eventos.</p>
+  </header>
+
+  <!-- ===== FORMULARIO + INFO ===== -->
+  <section class="contacto-section" id="contacto-principal">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORMULARIO -->
+        <div class="contact-form-wrapper fade-in">
+          <h3>Envíanos un mensaje</h3>
+          <form id="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="form-nombre">Nombre completo *</label>
+              <input
+                type="text"
+                id="form-nombre"
+                name="nombre"
+                placeholder="Tu nombre y apellidos"
+                required
+                autocomplete="name"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="form-email">Correo electrónico *</label>
+              <input
+                type="email"
+                id="form-email"
+                name="email"
+                placeholder="tu@correo.com"
+                required
+                autocomplete="email"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="form-asunto">Asunto</label>
+              <select id="form-asunto" name="asunto">
+                <option value="Consulta general">Consulta general</option>
+                <option value="Información sobre eventos">Información sobre eventos</option>
+                <option value="Propuesta de colaboración">Propuesta de colaboración</option>
+                <option value="Solicitud de inscripción en la comunidad">Inscripción en la comunidad</option>
+                <option value="Propuesta de artículo">Propuesta de artículo</option>
+                <option value="Otro asunto">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-mensaje">Mensaje *</label>
+              <textarea
+                id="form-mensaje"
+                name="mensaje"
+                placeholder="Escribe tu mensaje aquí…"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="btn-enviar-form" style="width: 100%;">
+              Enviar mensaje
+            </button>
+
+            <p class="form-note">
+              Al pulsar «Enviar», se abrirá tu cliente de correo con el mensaje preparado.
+              Si no tienes cliente de correo configurado, escríbenos directamente a
+              <a href="mailto:contacto@somoshispanidad.es">contacto@somoshispanidad.es</a>
+            </p>
+          </form>
+        </div>
+
+        <!-- INFO DE CONTACTO -->
+        <div class="contact-info-block fade-in" id="contact-info">
+          <h3>Información de Contacto</h3>
+
+          <div class="contact-detail">
+            <span class="contact-icon">📍</span>
+            <div class="contact-detail-text">
+              <strong>Sede</strong>
+              28250 Torrelodones<br>
+              Madrid, España
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-icon">✉️</span>
+            <div class="contact-detail-text">
+              <strong>Correo electrónico</strong>
+              <a href="mailto:contacto@somoshispanidad.es">contacto@somoshispanidad.es</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-icon">🌐</span>
+            <div class="contact-detail-text">
+              <strong>Web actual</strong>
+              <a href="https://www.somoshispanidad.es" target="_blank" rel="noopener noreferrer">www.somoshispanidad.es</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-icon">🗓️</span>
+            <div class="contact-detail-text">
+              <strong>Próximo evento</strong>
+              Visita guiada al Museo de América<br>
+              Sábado, 18 de Abril de 2025
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(212,184,150,0.2);">
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.75;">
+              Respondemos a todos los mensajes en un plazo máximo de 48 horas en días laborables.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Somos Hispanidad" class="logo-mark">
+        <p>Ciudadanos comprometidos con la verdad histórica del Imperio Español y la promoción de los lazos culturales del mundo hispano.</p>
+        <p class="footer-lema">Utraque Unum</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación secundaria">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="articulos.html">Artículos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>📍 28250 Torrelodones<br>Madrid, España</p>
+        <p>✉️ <a href="mailto:contacto@somoshispanidad.es">contacto@somoshispanidad.es</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Somos Hispanidad. Todos los derechos reservados.</p>
+      <p><a href="https://www.somoshispanidad.es/_files/ugd/c4fe9a_d60b3c057b984740bd2023525d8cef3b.docx" target="_blank" rel="noopener noreferrer">Aviso Legal</a></p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top-btn" aria-label="Volver arriba">↑</button>
+  <script src="script.js" defer></script>
+</body>
+</html>
