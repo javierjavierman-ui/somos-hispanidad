@@ -282,6 +282,39 @@ section { padding: 5rem 2rem; }
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
+.pilares-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.pilares-header-text {
+  flex: 1;
+}
+.pilares-header-img {
+  flex-shrink: 0;
+  width: 170px;
+  mix-blend-mode: multiply; /* Se integra perfecto con los fondos crema */
+  opacity: 0.95;
+}
+.pilares-header-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.6s ease;
+}
+.pilares-header-img:hover img {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .pilares-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pilares-header-img {
+    display: none; /* Oculto en móvil para que el texto sea protagonista */
+  }
+}
 .pilares-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
